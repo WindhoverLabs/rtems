@@ -52,6 +52,7 @@ RTEMS_BSPOPTS_HELP([CLOCK_DRIVER_USE_FAST_IDLE],
 occurs while the IDLE thread is executing.  This can significantly reduce
 simulation times.])
 
+RTEMS_BSPOPTS_SET([BSP_CONSOLE_MINOR],[snickerdoodle],[0])
 RTEMS_BSPOPTS_SET([BSP_CONSOLE_MINOR],[*],[1])
 RTEMS_BSPOPTS_HELP([BSP_CONSOLE_MINOR],[minor number of console device])
 
@@ -66,6 +67,7 @@ RTEMS_BSPOPTS_HELP([ZYNQ_CONSOLE_USE_INTERRUPTS],[use interrupt driven mode for 
 RTEMS_BSPOPTS_SET([BSP_ZYNQ_RAM_LENGTH],[xilinx_zynq_a9_qemu],[256M])
 RTEMS_BSPOPTS_SET([BSP_ZYNQ_RAM_LENGTH],[xilinx_zynq_zc702],[1024M])
 RTEMS_BSPOPTS_SET([BSP_ZYNQ_RAM_LENGTH],[xilinx_zynq_zc706],[1024M])
+RTEMS_BSPOPTS_SET([BSP_ZYNQ_RAM_LENGTH],[snickerdoodle],[1024M])
 RTEMS_BSPOPTS_SET([BSP_ZYNQ_RAM_LENGTH],[xilinx_zynq_zedboard],[512M])
 RTEMS_BSPOPTS_SET([BSP_ZYNQ_RAM_LENGTH],[*],[256M])
 RTEMS_BSPOPTS_HELP([BSP_ZYNQ_RAM_LENGTH],[override a BSP's default RAM length])
